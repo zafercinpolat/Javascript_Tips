@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">  
+        <h1>Weather Application</h1>
+        <form>
+            <input type="text" placeholder="Please input city name..." name="" id="city-input">
+            <input type="submit" value="Get Weather"/>
+        </form>
+        <div id="weather-data" >
+               <div class="icon">   
+                    <!-- <img src="http://openweathermap.org/img/wn/01d.png" alt="Weather Icon" srcset=""> -->
+               </div>
+               <div class="temprature"> 0C</div>
+               <div class="description"> - </div>
+               <div class="details">
+                    <div>Feels like : 0C</div>
+                    <div>Humidity: 0%</div>
+                    <div>Wind Speed: 0 m/s</div>
+
+               </div>
+        </div>
+        <div id="no-data" style="display:none">
+          Please input correct city name!
+        </div>
+   </div>
+   <script src="index.js"></script>
+</body>
+</html>
