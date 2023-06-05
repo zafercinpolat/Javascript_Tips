@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="options">   
+             <button id="bold" class="option-button format">
+                <i class="fa-solid fa-bold" aria-hidden="true"></i>
+             </button>
+             <button id="superscript" class="option-button script">
+                <i class="fa-solid  fa-superscript" aria-hidden="true"></i>
+             </button>
+             <button id="subscript" class="option-button script">
+                <i class="fa-solid  fa-subscript" aria-hidden="true"></i>
+             </button>
+
+             <button id="insertOrderList" class="option-button">
+                <i class="fa-solid  fa-list-ol" ></i>
+             </button>
+             <button id="insertUnorderList" class="option-button">
+                <i class="fa-solid  fa-list"></i>
+             </button>
+             <button id="undo" class="option-button">
+                <i class="fa-solid  fa-rotate-left" aria-hidden="true"></i>
+             </button>
+             <button id="redo" class="option-button">
+                <i class="fa-solid  fa-rotate-right" aria-hidden="true"></i>
+             </button>
+             <button id="createLink" class="adv-option-button">
+                <i class="fa fa-link" aria-hidden="true"></i>
+             </button>
+             <button id="unLink" class="option-button">
+                <i class="fa fa-unlink" aria-hidden="true"></i>
+             </button>
+             <button id="justifyLeft" class="option-button align">
+                <i class="fa-solid fa-align-left" aria-hidden="true"></i>
+             </button>
+             <button id="justifyCenter" class="option-button align">
+                <i class="fa-solid fa-align-center" aria-hidden="true"></i>
+             </button>
+             <button id="justifyRight" class="option-button align">
+                <i class="fa-solid fa-align-right" aria-hidden="true"></i>
+             </button>
+             <button id="justifyFull" class="option-button align">
+                <i class="fa-solid fa-align-justify" aria-hidden="true"></i>
+             </button>
+             <button id="indent" class="option-button spacing">
+                <i class="fa-solid fa-indent" aria-hidden="true"></i>
+             </button>
+             <button id="outdent" class="option-button spacing">
+                <i class="fa-solid fa-outdent" aria-hidden="true"></i>
+             </button>
+             <select name="" id="formatBlock" class="adv-option-button">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+             </select>
+            <select id="fontName" class="adv-option-button">
+                <!-- <option>Sans Serif</option> -->
+            </select>
+            <select id="fontSize" class="adv-option-button">
+                <!-- <option>10px</option> -->
+            </select>
+
+            <div class="input-wrapper">
+                <input type="color" id="foreColor" class="adv-option-button">
+                <label for="foreColor">Font Color</label>
+            </div>
+            <div class="input-wrapper">
+                <input type="color" id="backColor" class="adv-option-button">
+                <label for="backColor">Highlight Color</label>
+            </div>
+        </div>
+        <div id="text-input" contenteditable="true">
+asdasd
+        </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
